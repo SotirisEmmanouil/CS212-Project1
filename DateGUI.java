@@ -1,10 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.TextArea;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Arrays;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 import javax.swing.*;
 
