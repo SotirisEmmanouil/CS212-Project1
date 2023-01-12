@@ -48,7 +48,7 @@ public class DateGUI extends JFrame {
 	 		DateFile = new TextFileInput(filename);
 	 			line = DateFile.readLine();
 	 				
-	 			while (line!=null) {									            // count the amount of tokens
+	 			while (line!=null) {							// count the amount of tokens
 	 				DateTokens = new StringTokenizer(line,",");
 	 					tokens += DateTokens.countTokens();
 	 						line = DateFile.readLine();
@@ -57,12 +57,12 @@ public class DateGUI extends JFrame {
 	 				DateFile2 = new TextFileInput(filename);
 		 			line2 = DateFile2.readLine();
 		 			
-	 					while (line2!= null) {								        //while there are more lines, create tokens
+	 					while (line2!= null) {				           //while there are more lines, create tokens
 	 					DateTokens2 = new StringTokenizer(line2,",");	
-	 						while (DateTokens2.hasMoreTokens()) {				//while there are more tokens, append the tokens to the array
-	 							dateListUnsorted[k++] = DateTokens2.nextToken();		
+	 						while (DateTokens2.hasMoreTokens()) {		     //while there are more tokens, 
+							   dateListUnsorted[k++] = DateTokens2.nextToken();	// append the tokens to the array	
 	 			}
-	 								line2= DateFile2.readLine();				    //read the next line
+	 								line2= DateFile2.readLine();		//read the next line
 	 				
 	 					}
 	 				
