@@ -53,23 +53,23 @@ public class DateGUI extends JFrame {
 	 					tokens += DateTokens.countTokens();
 	 						line = DateFile.readLine();
 	 				}
-	 				dateListUnsorted = new String[tokens];				// declare an array with the size of the tokens
-	 				DateFile2 = new TextFileInput(filename);
-		 			line2 = DateFile2.readLine();
+	 		dateListUnsorted = new String[tokens];				// declare an array with the size of the tokens
+	 	DateFile2 = new TextFileInput(filename);
+		 line2 = DateFile2.readLine();
 		 			
-	 					while (line2!= null) {				           //while there are more lines, create tokens
-	 					DateTokens2 = new StringTokenizer(line2,",");	
-	 						while (DateTokens2.hasMoreTokens()) {		     //while there are more tokens, 
-							   dateListUnsorted[k++] = DateTokens2.nextToken();	// append the tokens to the array	
+	    while (line2!= null) {				           	//while there are more lines, create tokens
+	 DateTokens2 = new StringTokenizer(line2,",");	
+	 	while (DateTokens2.hasMoreTokens()) {		     		//while there are more tokens, 
+			 dateListUnsorted[k++] = DateTokens2.nextToken();	// append the tokens to the array	
 	 			}
-	 								line2= DateFile2.readLine();		//read the next line
+	 			line2= DateFile2.readLine();			//read the next line
 	 				
 	 					}
 	 				
 
 	 		}
-	 	public static void convert(String [] list1) {				             //method which converts the string array
-	 		dateListSorted = new int[dateListUnsorted.length];		        // to an int so it can be sorted, then back to a 
+	public static void convert(String [] list1) {				             //method which converts the string array
+	 		dateListSorted = new int[dateListUnsorted.length];		     // to an int so it can be sorted, then back to a 
 	 			for(int i = 0; i <dateListUnsorted.length; i++) {           //string array so it can be appended to the Date212 array
 				dateListSorted[i] = Integer.parseInt(dateListUnsorted[i]);
 		}
@@ -78,26 +78,22 @@ public class DateGUI extends JFrame {
 			  	 for(int i = 0; i < dateListSorted.length; i++) {
 			  		 dateListSorted2[i] = String.valueOf(dateListSorted[i]);
 		}
-			  				DateArray = new Date212[dateListSorted2.length];
-			  					for(int i = 0; i < dateListSorted2.length; i++) {
-			  							DateArray[i] = new Date212(dateListSorted2[i]);
+			  DateArray = new Date212[dateListSorted2.length];
+			for(int i = 0; i < dateListSorted2.length; i++) {
+		DateArray[i] = new Date212(dateListSorted2[i]);
 	 }
 	 		
 	 		
 	 	}
 	 
-								
-
-	 
-	 
-	 public static void printUnsortedList(String [] list) {			//append the unsorted array to the GUI
+     public static void printUnsortedList(String [] list) {			//append the unsorted array to the GUI
 		  for (int i=0;i<list.length;i++) {
 				  unsortedDates.append(list[i]);
 				  	unsortedDates.append("\n");
 		  	}
 	 }
 	
-	 public static void printSortedList(Date212 [] list) {			//append the sorted array to the GUI
+      public static void printSortedList(Date212 [] list) {			//append the sorted array to the GUI
 		  for (int i=0;i<list.length;i++) {
 				  sortedDates.append(String.valueOf(list[i]));
 				  	sortedDates.append("\n");
