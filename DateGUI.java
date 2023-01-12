@@ -6,12 +6,11 @@ import java.util.StringTokenizer;
 import javax.swing.*;
 
 public class DateGUI extends JFrame {
-	   
-	public static String date;						//variables and instances of needed objects
+	  					   //variables and instances of needed objects
 	public static int tokens;
 	public static String[] dateListUnsorted, dateListSorted2;
 	public static int [] dateListSorted;
-	public static TextFileInput DateFile,DateFile2;
+	public static TextFileInput DateFile, DateFile2;
 	public static StringTokenizer DateTokens,DateTokens2;
 	public static String FileName = "/Users/sotirisemmanouil/eclipse-workspace/CS212 Project 1/src/DateFile.txt";
 	public static TextArea unsortedDates;
