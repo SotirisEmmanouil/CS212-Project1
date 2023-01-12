@@ -20,9 +20,8 @@ public class DateGUI extends JFrame {
 	public static TextArea unsortedDates;
 	public static TextArea sortedDates;  
 	public static Date212[] DateArray;
-;
 	   
-		public static void openGUI() {
+    public static void openGUI() {
 	     DateGUI DateFrame = new DateGUI();
 	     unsortedDates = new TextArea("Unsorted\n\n");
 	     sortedDates = new TextArea("Sorted\n\n");
