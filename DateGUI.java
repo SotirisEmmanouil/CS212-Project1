@@ -59,12 +59,12 @@ public class DateGUI extends JFrame {
 	 	while (DateTokens2.hasMoreTokens()) {		     		//while there are more tokens, 
 			 dateListUnsorted[k++] = DateTokens2.nextToken();	// append the tokens to the array	
 	 			}
-	 			line2= DateFile2.readLine();			//read the next line
-	 				
-	 					}
+	 			line2= DateFile2.readLine();			//read the next line	
+	 		}
 	 				
 
-	 		}
+   }
+	
 	public static void convert(String [] list1) {				             //method which converts the string array
 	 		dateListSorted = new int[dateListUnsorted.length];		     // to an int so it can be sorted, then back to a 
 	 			for(int i = 0; i <dateListUnsorted.length; i++) {           //string array so it can be appended to the Date212 array
@@ -78,9 +78,7 @@ public class DateGUI extends JFrame {
 			  DateArray = new Date212[dateListSorted2.length];
 			for(int i = 0; i < dateListSorted2.length; i++) {
 		DateArray[i] = new Date212(dateListSorted2[i]);
-	 }
-	 		
-	 		
+	 }	
 	 	}
 	 
      public static void printUnsortedList(String [] list) {			//append the unsorted array to the GUI
@@ -95,6 +93,5 @@ public class DateGUI extends JFrame {
 				  sortedDates.append(String.valueOf(list[i]));
 				  	sortedDates.append("\n");
 		  		}
-	 }
-	 
+	 } 
 }
