@@ -37,7 +37,7 @@ public class DateGUI extends JFrame {
 	
 	}
 	
-	 public static void readFromFile(String filename)  {				//reads the file provided
+     public static void readFromFile(String filename)  {				//reads the file provided
 	    int k = 0;
 	    String line, line2;
 	 		DateFile = new TextFileInput(filename);
@@ -63,10 +63,10 @@ public class DateGUI extends JFrame {
 
    }
 	
-		public static void print(String [] list1) {			//print the unsorted and unsorted dates onto the GUI	
-	    	   for(int i = 0; i <dateListUnsorted.length; i++) {
-	 			 unsortedDates.append(list1[i]);
-				    unsortedDates.append("\n");
+     public static void print(String [] list1) {			//print the unsorted and unsorted dates onto the GUI	
+	     for(int i = 0; i <dateListUnsorted.length; i++) {
+	 	   unsortedDates.append(list1[i]);
+			unsortedDates.append("\n");
 		}
 			Arrays.sort(dateListUnsorted);				        //sort the array
 		         DateArray = new Date212[dateListUnsorted.length];		//declare the size of a Date212 array to store the dates
