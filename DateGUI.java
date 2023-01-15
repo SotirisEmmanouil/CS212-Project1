@@ -31,10 +31,7 @@ import javax.swing.*;
 	       unsortedDates.setEditable(false);
 	       sortedDates.setEditable(false);
 	       readFromFile(FileName);
-	       printUnsortedList(dateListUnsorted);
-	       convert(dateListUnsorted);
-	       printSortedList(DateArray);
-	
+	       print(dateListUnsorted);
 	}
 	
    public static void readFromFile(String filename)  {				//reads the file provided
