@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 import javax.swing.*;
 
-public class DateGUI extends JFrame {
+  public class DateGUI extends JFrame {
 	  					   //variables and instances of needed objects
 	public static int tokens;
 	public static String[] dateListUnsorted;
@@ -16,7 +16,7 @@ public class DateGUI extends JFrame {
 	public static TextArea sortedDates;  
 	public static Date212[] DateArray;
 	   
-    public static void openGUI() {					//GUI setup
+   public static void openGUI() {					//GUI setup
 	     DateGUI DateFrame = new DateGUI();
 	     unsortedDates = new TextArea("Unsorted\n\n");
 	     sortedDates = new TextArea("Sorted\n\n");
@@ -37,7 +37,7 @@ public class DateGUI extends JFrame {
 	
 	}
 	
-     public static void readFromFile(String filename)  {				//reads the file provided
+   public static void readFromFile(String filename)  {				//reads the file provided
 	    int k = 0;
 	    String line, line2;
 	 		DateFile = new TextFileInput(filename);
