@@ -60,7 +60,7 @@ import javax.swing.*;
 
    }
 	
-     public static void print(String [] list1) {			//print the unsorted and unsorted dates onto the GUI	
+     public static void print(String [] list1) {			//print the unsorted and sorted dates onto the GUI	
 	     for(int i = 0; i <dateListUnsorted.length; i++) {
 	 	   unsortedDates.append(list1[i]);
 			unsortedDates.append("\n");
